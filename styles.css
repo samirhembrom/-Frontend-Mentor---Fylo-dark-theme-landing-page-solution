@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+    color: #fff;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+/* =============
+    Layout        HEADER
+    ============== */
+.text-align-center{
+    text-align: center;
+}
+
+header {
+    background: hsl(218, 28%, 13%);
+    padding-bottom: 8em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media(min-width:500px){
+    header{
+        max-width: 1440px;
+    }
+}
+
+.bg-color {
+    background-color: hsl(217, 28%, 15%);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a:hover,
+nav a:focus {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.top-logo {
+    align-self: center;
+    width: 30%;
+}
+
+@media(min-width:500px){
+    .top-logo{
+        width:14%;
+    }
+}
+
+.top-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+@media(min-width:500px){
+    .top-container{
+        padding-top: 5em;
+    }
+}
+
+.intro-img {
+    width: 90%;
+}
+
+@media(min-width:500px){
+    .intro-img {
+        padding-top: 6em;
+        width:53%;
+    }
+}
+
+.bg-img {
+    background-image: url("images/bg-curvy-mobile.svg");
+    height: 141px;
+    width: 100%;
+    margin-top: -4em;
+    background-size: cover;
+}
+
+@media(min-width:500px){
+    .bg-img{
+        background-image:url("images/bg-curvy-desktop.svg");
+        margin-top: 8em;
+        height: 449px;
+    }
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: -2em;
+    line-height: 1.5em;
+}
+
+@media(min-width:500px){
+    h1{
+        margin-top: -20em;
+    }
+    .bottom-container{
+        max-width: 500px;
+        margin: 0 auto 10em;
+
+    }
+}
+
+header p {
+    padding: 0 3em;
+}
+
+.btn {
+    color: #fff;
+    background-color: hsl(176, 68%, 64%);
+    font-weight: bold;
+    padding: 1.375em 6em;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 1em auto;
+}
+
+.btn:hover,
+.btn:focus {
+    filter: brightness(130%);
+}
+
+
+/* ++++++++++++++
+        Features
++++++++++++++++++++ */
+
+#features {
+    padding: 5em 0;
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card+.card {
+    margin-top: 10em;
+}
+
+@media(min-width:500px){
+    #features{
+        margin-top: -3em;
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 9em;
+    }
+    .card+.card {
+        margin-top: 0;
+    }
+}
+
+/* ===============
+Productive 
+================= */
+#productive {
+    color: #fff;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 13em;
+}
+
+
+#productive img {
+    max-width: 100%;
+}
+
+.btn-productive {
+    color: hsl(176, 68%, 64%);
+    padding-bottom: .5em;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+a div {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.i {
+    background-color: hsl(176, 68%, 64%);
+    color: hsl(218, 28%, 13%);
+    padding: .3em;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.btn-productive:hover .i {
+    background-color: #fff;
+}
+
+.btn-productive:hover,
+.btn-productive:focus {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+@media(min-width:800px){
+    #productive{
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 4em;
+    }
+    #productive img {
+        max-width: 80%;
+        margin-right: 4em;
+    }
+
+    #productive div{
+        align-self: center;
+    }
+    #productive h2{
+        font-size: 2.575rem;
+    }
+    #productive a{
+        margin-left: 1em;
+    }
+}
+
+
+/* ==============
+    Team
+================= */
+
+.img-quotation {
+    width: 35px;
+    height: 25px;
+    margin-left: .5em;
+    margin-bottom: -.3em;
+}
+
+#team {
+    width: 80%;
+    margin: 0 auto 12em;
+    max-width: 400px;
+}
+
+.component {
+    background-color: hsl(219, 30%, 18%);
+    padding: 2em 1.875em 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+#team h5 {
+    margin: 0;
+}
+
+.component img {
+    height: 30px;
+    width: 30px;
+    margin-right: 1em;
+    border-radius: 100px;
+}
+
+.component{
+    box-shadow: 5px 5px hsl(216, 53%, 9%);
+}
+
+.component-img-title {
+    display: flex;
+    margin-top: 1.75em;
+}
+
+.position{
+    margin-top: .5em;
+    font-size: .675rem;
+}
+
+@media(min-width:800px){
+    #team{
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        position: relative;
+        margin-top: 16em;
+        margin-bottom: 16em;
+    }
+    .component + .component{
+        margin-left: 3em;
+    }
+   
+    .img-quotation{
+        width: 55px;
+        height: 45px;
+        position: absolute;
+        top: -2.475em;
+        left: -1em;
+        z-index: -1;
+    }
+
+}
+
+
+/* =============
+    Sign In
+    ============= */
+#sign-in {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: -12em;
+    background-color: hsl(217, 28%, 15%);
+    padding: 2em 2em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+input {
+    width: 100%;
+    height: 3.675em;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: #a5a5a5;
+    margin: 2em 0 .55em;
+}
+
+.btn-sign-in {
+    width: 100%;
+    font-size: .8rem;
+}
+
+@media(min-width:500px){
+    #sign-in{
+        max-width: 850px;
+        padding: 2em 6em;
+        margin-bottom: -8em;
+    }
+    #sign-in div{
+        margin-top: 2.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    #sign-in a,
+    #sign-in input{
+        margin: 0;
+    }
+    #sign-in input{
+        text-align: left;
+        padding-left: 3em;
+        width: 60%;
+    }
+    #sign-in a{
+        width:35%;
+        padding: 1.5em 0;
+        font-size: .7rem;
+    }
+
+}
+
+/* Footer */
+.footer {
+    background-color: hsl(216, 53%, 9%);
+}
+
+footer {
+    padding: 15em 0 1em;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.bottom-logo {
+    margin-bottom: 2em;
+}
+
+.information {
+    margin-bottom: 2em;
+}
+
+.info {
+    display: flex;
+}
+
+.info img {
+    align-self: start;
+    margin-right: 3em;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.col+.col {
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icons i {
+    margin-left: 1em;
+}
+
+.fa-facebook-f {
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 12px 14px;
+}
+
+.fa-twitter {
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 12px 10px;
+}
+
+.fa-instagram {
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 12px 10px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+}
+
+@media(min-width:500px){
+    footer{
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .information{
+        display: flex;
+        width: 45%;
+    }
+    .col{
+        width: 10%;
+    }
+    .social-icons{
+        align-self: flex-start;
+        width: 10%;
+    }
+    .information div{
+        margin-left:1em;
+    }
+    .col+.col {
+        margin: 0;
+    }
+    .col p:first-child{
+        margin-top: 0;
+    }
+
+}
